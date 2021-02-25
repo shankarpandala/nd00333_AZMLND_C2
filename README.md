@@ -33,13 +33,13 @@ AutoML executed myltiple models and we can se the metrics as below
 Best model is deployed as show below
 ![Deployed Model](./images/deeployed-model.png)
 
+## Logging
+Logs can be verified by using log.py script and insights dashboard
+![Enable Logging](./images/logs.png)
+
 ## Enable AppInsights
 AppInsights are enabled using the log.py script
 ![Enabled AppInsights](./images/app_insights.png)
-
-## Logging
-Logs can be verified by using log.py script and insights dashboard
-![Enable Logging](./images/app_insights.png)
 
 
 ## SwaggerUI
@@ -53,8 +53,11 @@ we can test the deployed endpoint using the endpoint.py script which has sample 
 ![Consuming](./images/consuming.png)
 
 ## Pipeline Deploy
-Deploy automl pipeline as an endpoint
+Deploy automl pipeline as an endpoint with active status
 ![Pipeline Deploy](./images/pipeline-deploy.png)
+
+List of Pipelines endpoints
+![Pipeline Deploy](./images/pipelines-list.png)
 
 ## Pipeline Endpoint
 deployed Pipeline endpoint
@@ -70,6 +73,14 @@ Run initiated with pipeline endpoint
 ## Screen Recording
 
 
-[Link to Screencast Recording](https://youtu.be/N0CjbfOrYFA)
+[Link to Screencast Recording](https://youtu.be/J067tN5ZBzU)
 
 
+## Standout Suggestions
+### Improving the project
+
+Some ways to improve this project are:
+
+ - Data has lot of imablance in the classes. Aaccuray is not the right metric to use in this scenario and we can make efforts to handle imbalance in the classes
+ - Efficient handling of outliers can lead to further improvement of the model
+ - Applying feature selection techniques might improve the model
