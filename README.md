@@ -14,7 +14,7 @@ For more details of the dataset visit [Bank Marketing](https://archive.ics.uci.e
 
 # Key Steps
 ## Service Principal
-Service Principal is created using Azure Cli as shown below
+Service Principal is created using Azure Cli as shown below using the azure cli commands provided in the lessons
 ![Service Principal](./images/service-principal.png)
 
 ## Dataset
@@ -22,15 +22,15 @@ Dataset provided in the project is uploaded to the azure blobs of workspace data
 ![Dataset](./images/dataset.png)
 
 ## AutoML Experiment
-An AutoML experiment is created and run for the dataset, You can see the completed run below
+An AutoML experiment is created and run for the dataset, as shown below
 ![AutoML Experiment](./images/exp-complete.png)
 
 ## Best Model
-AutoML executed myltiple models and we can se the metrics as below
+AutoML executed multiple models and varius types of algorithms we can se the metrics as below
 ![Best Model](./images/best-model.png)
 
 ## Deployment
-Best model is deployed as show below
+Best model which is the outcome of the AutoML runs is deployed as show below
 ![Deployed Model](./images/deeployed-model.png)
 
 ## Logging
@@ -53,10 +53,13 @@ we can test the deployed endpoint using the endpoint.py script which has sample 
 ![Consuming](./images/consuming.png)
 
 ## Pipeline Deploy
-Deploy automl pipeline as an endpoint with active status
+
+Deploying Pipeline as endpoints is a methods to deploy pipelines that can be called by a rest endpoint which runs on scalable compute clusters instead of ACI/AKS for Real time endpoinds.
+
+We can see deployed automl pipeline as an endpoint with active status
 ![Pipeline Deploy](./images/pipeline-deploy.png)
 
-List of Pipelines endpoints
+Pipelines endpoints tab in endpoints provides us the details of all the pipeline endpoints that are deployed. Here is the pipeline endpoint we deployed
 ![Pipeline Deploy](./images/pipelines-list.png)
 
 ## Pipeline Endpoint
@@ -64,7 +67,7 @@ deployed Pipeline endpoint
 ![Pipeline Endpoint](./images/pipeline-endpoint.png)
 
 ## Pipeline Run
-Run initiated with pipeline endpoint
+Below is the example of the pipeline run that is invoked by calling the pipeline rest endpoint that was deployed in previous steps
 ![Pipeline Run](./images/pipeline1.png)
 
 ![Pipeline Run](./images/run.png)
