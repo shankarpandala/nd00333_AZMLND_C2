@@ -34,7 +34,7 @@ Best model is deployed as show below
 ![Deployed Model](./images/deeployed-model.png)
 
 ## Logging
-Logs can be verified by using log.py script and insights dashboard
+We choose the best model for deployment and enable "Authentication" while deploying the model using Azure Container Instance (ACI). The executed code in logs.py enables Application Insights. "Application Insights enabled" is disabled before executing logs.py.
 ![Enable Logging](./images/logs.png)
 
 ## Enable AppInsights
